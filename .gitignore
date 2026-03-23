@@ -1,4 +1,24 @@
+# --- DATASET ---
+# Prevents the 2.5 GB dataset from uploading
 chest_xray/
+
+# --- MODELS ---
+# Prevents the 130 MB .keras file and any .h5 files from uploading
+# This avoids GitHub's 100MB file size limit error
+models/*.keras
+notebooks/*.h5
+*.keras
+*.h5
+
+# --- SYSTEM & TEMP FILES ---
+# Mac-specific hidden files
+.DS_Store
+# Python/Jupyter temporary files
 __pycache__/
 .ipynb_checkpoints/
-.DS_Store
+*.py[cod]
+
+# --- ENVIRONMENT ---
+venv/
+env/
+.env
